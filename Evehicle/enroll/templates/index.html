@@ -1,0 +1,894 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>FlexStart Bootstrap Template - Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  {% comment %} <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> {% endcomment %}
+  <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
+  <link href="{% static  'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+  <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+  <!-- =======================================================
+  * Template Name: FlexStart
+  * Updated: Aug 30 2023 with Bootstrap v5.3.1
+  * Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+
+  <style>
+    /* Reset default margin and padding */
+    body, html {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    /* Set hero section height to occupy the entire viewport */
+    #hero {
+      height: 100vh;
+    }
+    /* Set video to cover the entire hero section */
+    #video-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    /* Ensure container fills the entire hero section */
+    .container {
+      position: relative;
+      z-index: 1;
+      height: 100%;
+    }
+    /* Center content vertically and horizontally */
+    .hero-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      text-align: center;
+
+ 
+    }
+   
+  </style>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logo.png" alt="">
+        <span style="color: white; font-size: 24px;">EV Charge station</span>
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+         
+          <li class="dropdown"><a href="#"><span>Login</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="{% url 'userlogin' %}">User</a></li>
+              <li><a href="{% url 'owner_login' %}">Owner</a></li>
+              <li><a href="{% url 'adminlogin' %}">Admin</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- =================== Hero Section ============================================ -->
+  <section id="hero" class="hero">
+    <video autoplay muted loop id="video-bg" class="fullscreen-video">
+      <source src="static\videos\rr.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="container" style="position: relative; z-index: 1;">
+      <div class="hero-content" style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100%; text-align: center;">
+        <h1 style="color: blue;">Electronic Vehicle Charging Stations Management System</h1>
+        <a href="#about" class="btn-get-started scrollto" style="color: #fff; background-color: #007bff; border-color: #007bff;">Get Started</a>
+      </div>
+    </div>
+  </section>
+  
+  </body>
+  </html>
+  
+    
+    
+    
+  
+  
+  
+    
+    
+    <!--=====================================-End Hero==================== -->
+  
+    {% comment %} <main id="main"> {% endcomment %}
+  
+   
+  
+  
+      <!-- =================================== About Section=============================================== -->
+      <section id="about" class="about">
+        <div class="container-fluid">
+  
+          <div class="row mx-5 justify-content-center">
+            <div class="col-6">
+              <img src="{% static 'assets/img/jk.png' %}" class="img-fluid" alt="">
+            </div>
+            <div class="col-6">
+           
+              <h3>-About Us-</h3>
+              
+              <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
+                <div class="icon"><i class="bx bx-fingerprint"></i></div>
+                <h4 class="title"><a href="">Easy Route Finding</a></h4>
+                <p class="description">Best Navigation System which help you to reach at exact and appropriate Station</p>
+              </div>
+  
+              <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
+                <div class="icon"><i class="bx bx-gift"></i></div>
+                <h4 class="title"><a href="">Easy Slot Booking</a></h4>
+                <p class="description">Book your Slot easily and get unique barcode for your Booking</p>
+              </div>
+  
+              <div class="icon-box" data-aos="zoom-in" data-aos-delay="300">
+                <div class="icon"><i class="bx bx-atom"></i></div>
+                <h4 class="title"><a href="">Solve Queries with our Smart ChatBot</a></h4>
+                <p class="description">Our smart AI charbot will help you solving your Queries easily and Quickly</p>
+              </div>
+  
+            </div>
+          </div>
+        </div>
+        
+    </section>
+  {% comment %}=============================== end about section========================= {% endcomment %}
+  {% comment %}========================== start video section ================================={% endcomment %}
+  {% comment %}======================= section 1 ==================={% endcomment %}
+  <section class="big-feature-section">
+    <div class="container1 flex big-feature-container">
+        <div class="feature-video">
+          <video width="640" height="360"  autoplay loop muted>
+            <source src="static\videos\rj.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="feature-dec flex">
+            <h3>About EV Charging</h3>
+            <p>As fuel is required to run traditional vehicles, so is EV charging. Electric vehicle charging stations are the backbone of the EV revolution. They provide the essential energy needed to keep your electric car on the road, reduce carbon emissions, and contribute to cleaner air. </p>
+        </div>
+    </div>
+    </section>
+    {% comment %}======================= section 2 ==================={% endcomment %}
+    <section class="big-feature-section">
+      <div class="container1 flex big-feature-container" style="flex-direction: row-reverse;">
+          <div class="feature-video">
+            <video width="640" height="360"  autoplay loop muted>
+              <source src="static\videos\rt.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="feature-dec flex">
+              <h3>EV Charging Solutions for All</h3>
+              <p>No matter whether you own an electric car, a scooter, or any other electric vehicle, we’ve got you covered. Our latest and advanced EV chargers are designed to cater to all types of charging needs, ensuring that you can charge your vehicle quickly and conveniently, regardless of its battery capacity and model.
+  .</p>
+          </div>
+      </div>
+    </section>
+    {% comment %}======================= section 3 ==================={% endcomment %}
+    <section class="big-feature-section">
+    <div class="container1 flex big-feature-container">
+        <div class="feature-video">
+          <video width="640" height="360"  autoplay loop muted>
+            <source src="static\videos\rv.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="feature-dec flex">
+            <h3>Standard compliance</h3>
+            <p>An effective EV charging management system that complies with standards, supports all OCPP-compliant chargers, and allows roaming. This ensures seamless charging services for users and streamlines operations for charging station operators.</p>
+        </div>
+    </div>
+    </section>
+    {% comment %}================================= end video section========================= {% endcomment %}
+    {% comment %} =======================css file of video section============================= {% endcomment %}
+    <style>
+      body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+      }
+  
+      .big-feature-section {
+          background-color: #f8f8f8;
+          padding: 60px 0;
+          text-align: center;
+      }
+  
+      .big-feature-container {
+          max-width: 1200px;
+          margin: 0 auto;
+          display: flex;
+          justify-content: center;
+         align-items: center;
+          text-align: center; 
+      }
+  
+      .feature-video video {
+          max-width: 500px;
+          height: auto;
+          border-radius: 10px;
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      }
+  
+      .feature-dec {
+          margin-left: 40px;
+          align-item:flex-start;
+          text-align:start;
+      }
+  
+      h3 {
+          color: #333;
+          margin: 10px 0;
+          font-weight: 900;
+      }
+  
+      p {
+          color: #666;
+      }
+  
+      .flex{
+        margin-right: 130px;
+       
+      }
+  
+  </style>
+  
+  
+  {% comment %} ======================= end css file of video section============================= {% endcomment %}
+  {% comment %}===================== Advanced EV section start========================== {% endcomment %}
+  <div class="container2 boxed">
+  
+    <h1 class="heading">Advanced EV charging management software</h1>
+    <div class="content-container">
+        <div class="image-container">
+            <img src="https://www.numocity.com/wp-content/uploads/2023/10/advanced-1.png.webp" alt="EV Charging Image">
+            <p class="head">EV charging management system</p>
+            <p class="main">Our white-label EV charging software enables businesses to efficiently monitor, control, and optimize their EV charging operations for CPOs with ease.</p>
+        </div>
+        <div class="image-container">
+            <img src="https://www.numocity.com/wp-content/uploads/2023/10/Smart-EV-charging.jpg.webp" alt="Smart Charging Image">
+            <p class="head">Smart charging</p>
+            <p class="main">Optimize charging with the right traffic with our smart charging cloud-based load management solution to minimize energy waste, enhance sustainability, and manage the load.</p>
+        </div>
+        <div class="image-container">
+            <img src="https://www.numocity.com/wp-content/uploads/2023/10/Roaming-hub.jpg.webp" alt="Roaming Hub Image">
+            <p class="head">Interconnected roaming hub</p>
+            <p class="main">Our EV charging roaming platform lets electric mobility service providers access multiple charging networks for a seamless EV charging experience, eliminating range anxiety.</p>
+        </div>
+    </div>
+    <div class="content">
+        <h4 class="sub-heading">EV charging management system</h4>
+        <p>White-label EV charging software for efficient monitoring, control, and optimization of EV charging operations.</p>
+        <h4 class="sub-heading">Smart charging</h4>
+        <p>Optimize charging with our smart charging cloud-based load management solution to minimize energy waste.</p>
+    </div>
+  </div>
+  {% comment %}===================== Advanced EV section end========================== {% endcomment %}
+  {% comment %}===================== css of Advanced EV section ========================== {% endcomment %}
+  <style>
+    .container2 {
+      text-align: center;
+      padding: 20px;
+    }
+  
+    .heading {
+      font-size: 34px;
+      font-weight: 600;
+      text-align: left;
+      margin: 0; /* Add this line to remove the default margin */
+    }
+  
+    .content-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 20px 0;
+      flex-direction: row;
+    }
+  
+    .image-container {
+      margin: 0 10px;
+    }
+  
+    .image-container img {
+      width: 420px;
+      height: 255px;
+      object-fit: cover;
+      border: 1px solid #ddd;
+      border-radius: 0px;
+      transition: 0.2s ease-out;
+    }
+  
+    .image-container img:hover {
+      box-shadow: 0 0 10px black;
+    }
+  
+    .head {
+      font-size: 19px;
+      font-weight: 600;
+    }
+  
+    .main {
+      text-align: start;
+    }
+  
+    .content {
+    
+      text-align: left;
+    }
+  
+    .sub-heading {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+  
+    p {
+      font-size: 16px;
+      color: black;
+    }
+  </style>
+  
+  
+  {% comment %}===================== css of Advanced EV section end ========================== {% endcomment %}
+  
+  {% comment %}===================== /*start footer*/ ========================{% endcomment %}
+  
+  
+  {% comment %} ================================css of footer================== {% endcomment %}
+  
+  
+  
+    <style>
+      /* Add any custom styling for the footer here */
+      footer {
+        background-color: gray;
+        padding: 20px;
+        text-align: center;
+        font-weight: 800;
+        color: black;
+        height:267px;
+      }
+  
+      .footer-links {
+        margin-top: 10px;
+      }
+  
+      .footer-links a {
+        margin: 0 10px;
+        text-decoration: none;
+        color: #333;
+      }
+    </style>
+    {% comment %} ================================end css of footer================== {% endcomment %}
+  
+  
+    <!-- Your website content goes here -->
+    <style>
+      img {
+        display: inline;
+        justify-content: space-between;
+        align-items: center;
+        text-decoration: none;
+      }
+    
+      /* Add spacing between the images */
+      a:not(:last-child) {
+        margin-right: 10px;
+      }
+    
+      a {
+        text-decoration: none;
+      }
+    
+  
+    </style>
+  
+    <footer>
+      <p>&copy; 2024 Your EV Charging Company</p>
+      <br>
+      
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#locations">Locations</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+        <a href="https://www.example.com/terms">Terms of Service</a>
+        <a href="https://www.example.com/privacy">Privacy Policy</a>
+        <a href="https://www.example.com/blog">Blog</a>
+        <a href="https://www.example.com/careers">Careers</a>
+      </div>
+  <br>
+      <div>
+        <p>Follow us on social media:</p>
+        <a href="https://www.facebook.com/yourEVcompany" target="">
+          <img src="https://cdn-icons-png.flaticon.com/128/2504/2504903.png" alt="Facebook" style="width: 20px; height: 20px;">
+        </a>
+        <a href="https://twitter.com/yourEVcompany" target="">
+          <img src="https://cdn-icons-png.flaticon.com/128/4494/4494477.png" alt="Twitter" style="width: 20px; height: 20px;">
+        </a>
+        <a href="https://www.instagram.com/yourEVcompany" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/128/1384/1384063.png" alt="Instagram" style="width: 20px; height: 20px;">
+        </a>
+        <a href="https://www.instagram.com/yourEVcompany" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/128/4494/4494497.png" alt="Instagram" style="width: 20px; height: 20px;">
+        </a>
+      
+      </div>
+    </footer>
+  
+  
+  
+   
+  
+  
+  
+  {% comment %}===================== /*end footer*/ ========================{% endcomment %}
+  
+
+
+<!-- chatbotcode start -->
+
+
+
+
+
+
+<style>
+  .chat-bar-collapsible {
+  position: fixed;
+  bottom: 0;
+  right: 50px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.collapsible {
+  background-color: rgb(82, 151, 255);
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 350px;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+  border-radius: 10px 10px 0px 0px;
+  border: 3px solid white;
+  border-bottom: none;
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+
+.full-chat-block {
+  width: 350px;
+  background: white;
+  text-align: center;
+  overflow: auto;
+  scrollbar-width: none;
+  height: max-content;
+  transition: max-height 0.2s ease-out;
+}
+
+.outer-container {
+  min-height: 500px;
+  bottom: 0%;
+  position: relative;
+}
+
+.chat-container {
+  max-height: 500px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  scroll-behavior: smooth;
+  hyphens: auto;
+}
+
+.chat-container::-webkit-scrollbar {
+  display: none;
+}
+
+.chat-bar-input-block {
+  display: flex;
+  float: left;
+  box-sizing: border-box;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  background-color: rgb(235, 235, 235);
+  border-radius: 10px 10px 0px 0px;
+  padding: 10px 0px 10px 10px;
+}
+
+.chat-bar-icons {
+  display: flex;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+  width: 25%;
+  float: right;
+  font-size: 20px;
+}
+
+#chat-icon:hover {
+  opacity: .7;
+}
+
+/* Chat bubbles */
+
+#userInput {
+  width: 75%;
+}
+
+.input-box {
+  float: left;
+  border: none;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 16px;
+  color: #000;
+  background-color: white;
+  outline: none
+}
+
+.userText {
+  color: white;
+  font-family: Helvetica;
+  font-size: 16px;
+  font-weight: normal;
+  text-align: right;
+  clear: both;
+}
+
+.userText span {
+  line-height: 1.5em;
+  display: inline-block;
+  background: #5ca6fa;
+  padding: 10px;
+  border-radius: 8px;
+  border-bottom-right-radius: 2px;
+  max-width: 80%;
+  margin-right: 10px;
+  animation: floatup .5s forwards
+}
+
+.botText {
+  color: #000;
+  font-family: Helvetica;
+  font-weight: normal;
+  font-size: 16px;
+  text-align: left;
+}
+
+.botText span {
+  line-height: 1.5em;
+  display: inline-block;
+  background: #e0e0e0;
+  padding: 10px;
+  border-radius: 8px;
+  border-bottom-left-radius: 2px;
+  max-width: 80%;
+  margin-left: 10px;
+  animation: floatup .5s forwards
+}
+
+@keyframes floatup {
+  from {
+      transform: translateY(14px);
+      opacity: .0;
+  }
+  to {
+      transform: translateY(0px);
+      opacity: 1;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .full-chat-block {
+      width: 100%;
+      border-radius: 0px;
+  }
+  .chat-bar-collapsible {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+  }
+  .collapsible {
+      width: 100%;
+      border: 0px;
+      border-top: 3px solid white;
+      border-radius: 0px;
+  }
+}
+Footer
+</style>
+<!-- CHAT BAR BLOCK -->
+  <div class="chat-bar-collapsible">
+      <button id="chat-button" type="button" class="collapsible">Chat with us!
+          <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
+      </button>
+
+      <div class="content">
+          <div class="full-chat-block">
+              <!-- Message Container -->
+              <div class="outer-container">
+                  <div class="chat-container">
+                      <!-- Messages -->
+                      <div id="chatbox">
+                          <h5 id="chat-timestamp"></h5>
+                          <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                      </div>
+
+                      <!-- User input box -->
+                      <div class="chat-bar-input-block">
+                          <div id="userInput">
+                              <input id="textInput" class="input-box" type="text" name="msg"
+                                  placeholder="Tap 'Enter' to send a message">
+                              <p></p>
+                          </div>
+
+                          <div class="chat-bar-icons">
+                              <i id="chat-icon" style="color: crimson;" class="fa fa-fw fa-heart"
+                                  onclick="heartButton()"></i>
+                              <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send"
+                                  onclick="sendButton()"></i>
+                          </div>
+                      </div>
+
+                      <div id="chat-bar-bottom">
+                          <p></p>
+                      </div>
+
+                  </div>
+              </div>
+
+          </div>
+      </div>
+
+  </div>
+<!-- Chatbot -->
+
+
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+
+for (let i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+
+      var content = this.nextElementSibling;
+
+      if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+      } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+      }
+
+  });
+}
+
+function getTime() {
+  let today = new Date();
+  hours = today.getHours();
+  minutes = today.getMinutes();
+
+  if (hours < 10) {
+      hours = "0" + hours;
+  }
+
+  if (minutes < 10) {
+      minutes = "0" + minutes;
+  }
+
+  let time = hours + ":" + minutes;
+  return time;
+}
+
+// Gets the first message
+function firstBotMessage() {
+  let firstMessage = "How's it going?"
+  document.getElementById("botStarterMessage").innerHTML = '<p class="botText"><span>' + firstMessage + '</span></p>';
+
+  let time = getTime();
+
+  $("#chat-timestamp").append(time);
+  document.getElementById("userInput").scrollIntoView(false);
+}
+
+firstBotMessage();
+
+// Retrieves the response
+function getHardResponse(userText) {
+  let botResponse = getBotResponse(userText);
+  let botHtml = '<p class="botText"><span>' + botResponse + '</span></p>';
+  $("#chatbox").append(botHtml);
+
+  document.getElementById("chat-bar-bottom").scrollIntoView(true);
+}
+
+//Gets the text text from the input box and processes it
+function getResponse() {
+  let userText = $("#textInput").val();
+
+  if (userText == "") {
+      userText = "I love Code Palace!";
+  }
+
+  let userHtml = '<p class="userText"><span>' + userText + '</span></p>';
+
+  $("#textInput").val("");
+  $("#chatbox").append(userHtml);
+  document.getElementById("chat-bar-bottom").scrollIntoView(true);
+
+  setTimeout(() => {
+      getHardResponse(userText);
+  }, 1000)
+
+}
+
+// Handles sending text via button clicks
+function buttonSendText(sampleText) {
+  let userHtml = '<p class="userText"><span>' + sampleText + '</span></p>';
+
+  $("#textInput").val("");
+  $("#chatbox").append(userHtml);
+  document.getElementById("chat-bar-bottom").scrollIntoView(true);
+
+  //Uncomment this if you want the bot to respond to this buttonSendText event
+  // setTimeout(() => {
+  //     getHardResponse(sampleText);
+  // }, 1000)
+}
+
+function sendButton() {
+  getResponse();
+}
+
+function heartButton() {
+  buttonSendText("Heart clicked!")
+}
+
+// Press enter to send a message
+$("#textInput").keypress(function (e) {
+  if (e.which == 13) {
+      getResponse();
+  }
+});
+
+
+function getBotResponse(input) {
+  //rock paper scissors
+  if (input == "rock") {
+      return "paper";
+  } else if (input == "paper") {
+      return "scissors";
+  } else if (input == "scissors") {
+      return "rock";
+  }
+
+  // Simple responses
+  if (input == "How can a new user be registered in the system?") {
+    return "To create a new user, you can use the newuser model. Provide details such as the username, first name, last name, email, and passwords.";
+} else if (input == "What information is required to add a new charging station to the system?") {
+    return "To add a new charging station, use the Stations model. Provide details such as the station name, address, area, city, phone, capacity slots, details, and location.";
+} else if (input == "How do I book a charging slot for my vehicle?") {
+    return "To book a charging slot, use the Bookslots model. Provide details such as your name, vehicle number, mobile number, city, area, and the desired time for charging.";
+
+} else if (input == "How can I make a payment for my booking?") {
+    return "Payment details are stored in the Payment model. You may need to provide information such as the host name, account number, IFSC code, and the total payment amount.";
+
+} else if (input == "What happens if I face issues during the charging process?") {
+    return "In case of issues, you may contact the station owner. Their contact details can be found in the Stations model. Additionally, you can leave a review to share your experience.";
+} else if (input == "How can I find the nearest charging station to my location?") {
+    return "You can use the details provided in the Search model , specifically the location information, to find the nearest charging station.";
+} else if (input == "Can I book multiple slots for different vehicles under the same account?") {
+    return "Booking policies may vary. In general, you can book multiple slots, but the specifics depend on the rules set by the station owners.";	
+} else {
+    return "Try asking something else!";
+}
+}
+</script>
+
+
+<!-- chatbotcode end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'js/jquery.js' %}"></script>
+  <script src="{% static 'js/popper.js' %}"></script>
+  <script src="{% static 'js/bootstrap.js' %}"></script>
+  <!-- Template Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+		crossorigin="anonymous"></script>
+  {% comment %} <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script> {% endcomment %}
+  <script src="{% static 'assets/js/main.js' %}"></script>
+  {% if messages %}{% for message in messages %}<script>alert("{{ message }}");</script>{% endfor %}{% endif %}
+</body>
+
+</html>
